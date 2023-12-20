@@ -1,20 +1,22 @@
 /**** GENERAL */
+
 i {
     width: 20px;
 }
 
 /****** NAV BAR */
+
 .nav__bgcolor {
     background-color: #E5E5E5;
 }
 
 .small__logo{
-    height: 60px;
+    max-width: 60px;
     margin-right: 15px;
 }
 
 .search__bar {
-    width: 100%;
+    min-width: 250px;
 }
 
 .my__bell {
@@ -41,6 +43,15 @@ i {
     padding-left: 2.375rem;
 }
 
+
+
+/***** MAIN */
+
+.my__container {
+    width: calc(100vw - 70px);
+    background-color: #F8F9FA;
+}
+
 /***** LEFT BAR */
 
 .left__bar {
@@ -54,10 +65,41 @@ i {
     width: 100%;
 }
 
+/****** TOP BAR */
+
+.top__bar {
+    width: calc(100vw - 70px);
+    background-color: #1B72E8;
+}
+
+
+.my__badge {
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 /***** MEDIA QUERY */
 
 @media screen and (min-width: 992px) {
+
+    .top__bar {
+        width: calc(100vw - 150px);
+    }
+
    .left__bar {
-    width: 150px;
+        width: 150px;
    }
+
+   .my__container {
+        width: calc(100vw - 150px);
+    }
+
+    .topbar__container__50 {
+        width: 50%;
+    }
+    
+    .topbar__container {
+        width: 100%;
+    }
+
 }
