@@ -80,6 +80,21 @@ i {
 
 /***** MEDIA QUERY */
 
+/* medium query */
+
+@media screen and (min-width: 768px) {
+
+    .topbar__container__50 {
+        width: 50%;
+    }
+    
+    .topbar__container {
+        width: 50%;
+    }
+
+}
+
+/* large query */
 @media screen and (min-width: 992px) {
 
     .top__bar {
@@ -92,10 +107,6 @@ i {
 
    .my__container {
         width: calc(100vw - 150px);
-    }
-
-    .topbar__container__50 {
-        width: 50%;
     }
     
     .topbar__container {
