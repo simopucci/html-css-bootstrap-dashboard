@@ -1,3 +1,8 @@
+/**** GENERAL */
+i {
+    width: 20px;
+}
+
 /****** NAV BAR */
 .nav__bgcolor {
     background-color: #E5E5E5;
@@ -16,6 +21,10 @@
     color: orange;
 }
 
+#nav {
+    height: 70px;
+}
+
 #nav .form-control-feedback {
     position: absolute;
     z-index: 2;
@@ -26,10 +35,29 @@
     text-align: center;
     pointer-events: none;
     color: #aaa;
-  }
+}
   
-  #nav .form-control {
+#nav .form-control {
     padding-left: 2.375rem;
-  }
+}
 
-  /***** LEFT BAR */
+/***** LEFT BAR */
+
+.left__bar {
+    height: calc(100vh - 70px);
+    width: 70px;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051E34;
+}
+
+.link__container {
+    width: 100%;
+}
+
+/***** MEDIA QUERY */
+
+@media screen and (min-width: 992px) {
+   .left__bar {
+    width: 150px;
+   }
+}

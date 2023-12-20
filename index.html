@@ -6,7 +6,7 @@
     <title>Bootstrap Dashboard</title>
 
     <!-- Link Font Awesome -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Link Icons Bootstrap -->
     <link
@@ -31,7 +31,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
       <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt="Logo Boolean" class="d-none d-lg-block"/></a>
+        <a class="navbar-brand d-none d-lg-block" href="#"><img src="./img/logo.svg" alt="Logo Boolean" /></a>
         <a href="#"><img src="./img/mobile-logo.png" alt="Logo small" class="small__logo d-lg-none"></a>
 
         <div class="form-group flex-fill">
@@ -69,11 +69,32 @@
       </div>
     </nav>
 
-    <div class="left__bar">
+    <!-- Left Bar -->
+    <div class="left__bar d-flex flex-column p-3 text-white">
+      <div class="link__container py-1">
+        <i class="fa-solid fa-house"></i>
+        <span class="ms-2">Home</span>
+      </div>
 
+      <div class="link__container py-1">
+        <i class="fa-solid fa-chart-simple"></i>
+        <span class="ms-2">Stats</span>
+      </div>
+
+      <div class="link__container py-1">
+        <i class="fa-solid fa-signal"></i>
+        <span class="ms-2">Signals</span>
+      </div>
+      
+      <div class="link__container py-1 mt-auto">
+        <i class="bi bi-gear-fill"></i>
+        <span class="ms-2">Admin</span>
+      </div>
     </div>
-
-    <main></main>
+    
+    <main>
+      
+    </main>
 
     <!-- Link Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
