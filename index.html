@@ -72,20 +72,20 @@
     
     
     <!-- Main Section -->
-    <main class="d-flex">
-    
+    <main class="d-flex main__container">
+      
       <!-- Left Bar -->
       <div class="left__bar d-flex flex-column p-3 text-white align-items-center text-center text-lg-start">
         <div class="link__container py-1">
           <i class="fa-solid fa-house"></i>
           <span class="ms-2 d-none d-lg-inline">Home</span>
         </div>
-
+  
         <div class="link__container py-1">
           <i class="fa-solid fa-chart-simple"></i>
           <span class="ms-2 d-none d-lg-inline">Stats</span>
         </div>
-
+  
         <div class="link__container py-1">
           <i class="fa-solid fa-signal"></i>
           <span class="ms-2 d-none d-lg-inline">Signals</span>
@@ -132,21 +132,158 @@
         </div>
         
         <!-- Bottom content -->
-        <div class="row flex-column m-0 g-3">
-          <div class="col-12 col-lg-7">
+        <div class="row flex-column m-0 py-4 gap-3">
+          <div class="col-12 col-lg-8">
             <div class="card">
-              <div class="card-header">
-                Featured
+              <div class="card-header fw-semibold fs-4">
+                Prossime classi
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-              </ul>
+              <table class="table table-hover mb-4">
+                <thead>
+                  <tr class="text-center">
+                    <th scope="col" class="text-start col__50">Nome</th>
+                    <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
+                    <th scope="col" class="d-none d-md-table-cell">ROI</th>
+                    <th scope="col">Stato</th>
+                    <th scope="col">Azioni</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span><img src="./img/class-avatar.jpg" alt="avatar" class="avatar__class me-2"></span>
+                      <span>Classe 75</span>
+                    </td>
+                    <td class="d-none d-md-table-cell text-center">15 Feb 2021</td>
+                    <td class="d-none d-md-table-cell text-center">20%</td>
+                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                    <td class="action__cell">
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-trash-fill"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span><img src="./img/class-avatar.jpg" alt="avatar" class="avatar__class me-2"></span>
+                      <span>Classe 76</span>
+                    </td>
+                    <td class="d-none d-md-table-cell text-center">16 Feb 2021</td>
+                    <td class="d-none d-md-table-cell text-center">20%</td>
+                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                    <td class="action__cell">
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-trash-fill"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span><img src="./img/class-avatar.jpg" alt="avatar" class="avatar__class me-2"></span>
+                      <span>Classe 77</span>
+                    </td>
+                    <td class="d-none d-md-table-cell text-center">17 Feb 2021</td>
+                    <td class="d-none d-md-table-cell text-center">20%</td>
+                    <td class="text-center"><span class="badge text-bg-warning text-white">process</span></td>
+                    <td class="action__cell">
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-trash-fill"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span><img src="./img/class-avatar.jpg" alt="avatar" class="avatar__class me-2"></span>
+                      <span>Classe 78</span>
+                    </td>
+                    <td class="d-none d-md-table-cell text-center">18 Feb 2021</td>
+                    <td class="d-none d-md-table-cell text-center">20%</td>
+                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                    <td class="action__cell">
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-trash-fill"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span><img src="./img/class-avatar.jpg" alt="avatar" class="avatar__class me-2"></span>
+                      <span>Classe 79</span>
+                    </td>
+                    <td class="d-none d-md-table-cell text-center">19 Feb 2021</td>
+                    <td class="d-none d-md-table-cell text-center">20%</td>
+                    <td class="text-center"><span class="badge text-bg-danger">failed</span></td>
+                    <td class="action__cell">
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-trash-fill"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span><img src="./img/class-avatar.jpg" alt="avatar" class="avatar__class me-2"></span>
+                      <span>Classe 80</span>
+                    </td>
+                    <td class="d-none d-md-table-cell text-center">20 Feb 2021</td>
+                    <td class="d-none d-md-table-cell text-center">20%</td>
+                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                    <td class="action__cell">
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-trash-fill"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span><img src="./img/class-avatar.jpg" alt="avatar" class="avatar__class me-2"></span>
+                      <span>Classe 81</span>
+                    </td>
+                    <td class="d-none d-md-table-cell text-center">21 Feb 2021</td>
+                    <td class="d-none d-md-table-cell text-center">20%</td>
+                    <td class="text-center"><span class="badge text-bg-danger">failed</span></td>
+                    <td class="action__cell">
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-trash-fill"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span><img src="./img/class-avatar.jpg" alt="avatar" class="avatar__class me-2"></span>
+                      <span>Classe 82</span>
+                    </td>
+                    <td class="d-none d-md-table-cell text-center">22 Feb 2021</td>
+                    <td class="d-none d-md-table-cell text-center">20%</td>
+                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                    <td class="action__cell">
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-pencil-fill"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my__action__button"><i class="bi bi-trash-fill"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-          <div class="col">
-
+          
+          <div class="col-12 col-lg-8">
+            <div class="card">
+              <div class="card-header fw-semibold fs-4">
+                F.A.Q.
+              </div>
+              <table class="table table-hover mb-0">
+                <tbody>
+                  <tr>
+                    <td>
+                      <span>aisdh</span>
+                      <span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      asdasda
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      asdasda
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
