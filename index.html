@@ -131,39 +131,68 @@
                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
-              <div class="offcanvas-body text-start">
-                <label for="nomeutent offcanvas__width">Nome</label>
-                <div class="input-group mb-3 mt-2">
-                  <input type="text" class="form-control" id="nomeutente" aria-label="Username" aria-describedby="basic-addon1">
+              <form class="offcanvas-body container-fluid text-start" action="#" method="POST">
+
+                <div class="row">
+    
+                    <div class="col-6 mb-3">
+                    <label for="input__name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="input__name">
+                    </div>
+    
+                    <div class="col-6 mb-3">
+                    <label for="input__surname" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" id="input__surname">
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <label for="input__email" class="form-label">Email</label>
+                        <div class="input-group">
+                        <span class="input-group-text" id="addon">@</span>
+                        <input type="email" class="form-control" id="input__email" aria-label="Email" aria-describedby="addon">
+                        </div>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <label for="input__pass" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="input__pass">
+                    </div>
+                    
+                    <div class="mb-3 col-6">
+                      <label for="input__città" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="input__città">
+                    </div>
+
+                    <div class="mb-3 col-3">
+                        <label for="input__stato" class="form-label">Stato</label>
+                        <select class="form-select" aria-label="Default select example" id="input__stato">
+                        <option selected>Scegli..</option>
+                        <option value="1">Italy</option>
+                        <option value="2">France</option>
+                        <option value="3">Japan</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 col-3">
+                      <label for="cap__input" class="form-label">CAP</label>
+                      <input type="text" class="form-control" id="cap__input">
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="input__photo" class="form-label">Foto</label>
+                      <input class="form-control" type="file" id="input__photo">
+                    </div>              
                 </div>
 
-                <label for="nomeutente">Cognome</label>
-                <div class="input-group mb-3 mt-2 nome__utente">
-                  <input type="text" class="form-control" id="nomeutente" aria-label="Username" aria-describedby="basic-addon1">
+                <div class="mb-3 form-check">
+                  <label class="form-check-label" for="input__check">Seleziona per proseguire</label>
+                  <input type="checkbox" class="form-check-input" id="input__check">
                 </div>
-
-                <label for="basic-addon1">Email</label>
-                <div class="input-group mb-3 mt-2 nome__utente">
-                  <span class="input-group-text" id="basic-addon1">@</span>
-                  <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-
-                <label for="nomeutente">Password</label>
-                <div class="input-group mb-3 mt-2 nome__utente">
-                  <input type="password" class="form-control" id="nomeutente" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-
-                <label for="basic-addon1">Indirizzo Email</label>
-                <div class="input-group mb-3 mt-2 nome__utente">
-                  <span class="input-group-text" id="basic-addon1">@</span>
-                  <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-
-                <label for="nomeutente">Password</label>
-                <div class="input-group mb-3 mt-2 nome__utente">
-                  <input type="password" class="form-control" id="nomeutente" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-              </div>
+    
+                <button type="submit" class="btn btn-primary">Salva</button>
+                <button type="submit" class="btn btn-warning">Svuota</button>            
+    
+              </form>
 
               
               
