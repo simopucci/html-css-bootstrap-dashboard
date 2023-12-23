@@ -88,6 +88,11 @@ i {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.offcanvas__width {
+    width: 600px;
+}
+
+
 /***** BOTTOM CONTENT */
 
 /* card prossime classi */
